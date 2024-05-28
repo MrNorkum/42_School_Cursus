@@ -1,4 +1,4 @@
-# **nunnu's 42 projects**
+# **Ecole 42 Projects**
 
 <table width="100%" align="center">
 <tr style="display:flex; justify-content:space-around; paddind:0;">
