@@ -49,7 +49,7 @@
 
 [libft_tree]: https://github.com/MrNorkum/42_School_Cursus/tree/libft
 [libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
+[gnl_tree]: https://github.com/MrNorkum/42_School_Cursus/tree/get_next_line
 [gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
 [printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
