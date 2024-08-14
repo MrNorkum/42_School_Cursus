@@ -22,7 +22,7 @@
 To use `libft` in your project, simply clone the repository and include the `libft.h` header file in your C source files. Compile the source files along with your project.
 
 ```bash
-git clone <repository_url>
+git clone --branch libft https://github.com/MrNorkum/42_School_Cursus.git
 ```
 
 ## Usage
