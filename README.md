@@ -242,3 +242,9 @@ Iterates through the list lst and applies the function f to the content of each 
 ```c
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 ```
+
+## License
+
+```
+Bu taslağı ihtiyaçlarınıza göre düzenleyebiliriz. Herhangi bir ekleme veya çıkarma yapmak isterseniz, bana söylemeniz yeterli.
+```
