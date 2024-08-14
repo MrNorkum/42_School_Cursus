@@ -31,6 +31,19 @@ To use the library, make sure to include the libft.h header file in your C files
 ```c
 #include "./libft.h"
 ```
+Then you can call the library functions as needed:
+
+```c
+int main(void)
+{
+    char  *str = ft_strdup("Hello, world!");
+    if (!str)
+        return (1);
+    ft_putendl(str);
+    free(str);
+    return (0);
+}
+```
 
 ## Functions
 
