@@ -36,19 +36,47 @@ Include the library header in your C files:
 ## Functions
 
 ### Convert Functions
+
+Converts a string to an integer.
 ```c
 int ft_atoi(const char *str);
 ```
-Converts a string to an integer.
+Converts an integer to a string.
 ```c
 char *ft_itoa(int n);
 ```
-Converts an integer to a string.
+Converts a character to uppercase.
 ```c
 int ft_toupper(int c);
 ```
-Converts a character to uppercase.
+Converts a character to lowercase.
 ```c
 int ft_tolower(int c);
 ```
-Converts a character to lowercase.
+
+### Boolean Functions
+
+Checks if the character is alphabetic.
+```c
+int ft_isalpha(int c);
+```
+Checks if the character is a digit.
+```c
+int ft_isdigit(int c);
+```
+Checks if the character is alphanumeric.
+```c
+int ft_isalnum(int c);
+```
+Checks if the character is an ASCII character.
+```c
+int ft_isprint(int c);
+```
+Checks if the character is printable.
+```c
+int ft_isascii(int c);
+```
+
+
+
+
