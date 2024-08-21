@@ -6,12 +6,12 @@
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-    - [%s](#%s)
-    - [\%d-%i](#%d-%i)
-    - [%u](#%u)
-    - [%x-%X](#%x-%x)
-    - [%p](#%p)
-    - [%%](#%%)
+    - [%s](#s)
+    - [%d-%i](#d-i)
+    - [%u](#u)
+    - [%x-%X](#x-x)
+    - [%p](#p)
+    - [%%](#-1)
 - [Supported Formats](#supported-formats)
 - [Constants](#constants)
 - [License](#license)
@@ -21,7 +21,7 @@
 To use `ft_printf` in your project, simply clone the repository and include the `ft_printf.h` header file in your C source files. Compile the source files along with your project.
 
 ```bash
-git clone 
+git clone <repository_url>
 ```
 
 ## Usage
