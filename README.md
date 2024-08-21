@@ -11,7 +11,7 @@
     - [%u](#u)
     - [%x-%X](#x-x)
     - [%p](#p)
-    - [%%](#-1)
+    - [%%](#%%)
 - [Supported Formats](#supported-formats)
 - [Constants](#constants)
 - [License](#license)
