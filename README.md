@@ -6,7 +6,7 @@
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-    - [\%s](#\%s)
+    - [\%s](#%s)
     - [\%d-%i](#%d-%i)
     - [%u](#%u)
     - [%x-%X](#%x-%x)
