@@ -43,7 +43,7 @@ int main(void)
 }
 ```
 
-### \%s
+### %s
 
 ```c
 int main(void)
