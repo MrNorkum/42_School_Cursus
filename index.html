@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proje Yönlendirme</title>
+    <title>Proje Yönlendirme Grafiği</title>
     <style>
         body {
             display: flex;
@@ -15,17 +15,27 @@
         }
         .container {
             position: relative;
-            width: 800px;
-            height: 800px;
-            background-image: url('grafik.png'); /* Grafik dosyanızı buraya ekleyin */
-            background-size: cover;
+            width: 500px;
+            height: 500px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
         }
+        .orbit {
+            position: absolute;
+            border: 1px solid teal;
+            border-radius: 50%;
+        }
+        .orbit-1 { width: 80%; height: 80%; top: 10%; left: 10%; }
+        .orbit-2 { width: 60%; height: 60%; top: 20%; left: 20%; }
+        .orbit-3 { width: 40%; height: 40%; top: 30%; left: 30%; }
+        .orbit-4 { width: 20%; height: 20%; top: 40%; left: 40%; }
+
         .circle {
             position: absolute;
-            width: 70px;
-            height: 70px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            background-color: rgba(0, 128, 128, 0.7);
+            background-color: teal;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,19 +43,26 @@
             font-weight: bold;
             cursor: pointer;
         }
-        /* Dairelerin yerleşimi */
-        #circle1 { top: 50px; left: 300px; }
-        #circle2 { top: 200px; left: 400px; }
-        #circle3 { top: 400px; left: 100px; }
-        /* Yeni daireleri bu şekilde ekleyebilirsiniz */
+        /* Dairelerin yörüngelere göre konumu */
+        #circle1 { top: 5%; left: 50%; transform: translate(-50%, -50%); }
+        #circle2 { top: 35%; left: 80%; transform: translate(-50%, -50%); }
+        #circle3 { top: 70%; left: 20%; transform: translate(-50%, -50%); }
+        #circle4 { top: 50%; left: 50%; transform: translate(-50%, -50%); } /* merkezde */
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Dairelerin her birine tıklama ile yönlendirme yapacak div'ler -->
+        <!-- Yörüngeleri temsil eden daireler -->
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="orbit orbit-4"></div>
+
+        <!-- Projeler için tıklanabilir daireler -->
         <div id="circle1" class="circle" onclick="redirectTo('https://github.com/ft_printf')">ft_printf</div>
         <div id="circle2" class="circle" onclick="redirectTo('https://github.com/proje2')">Proje 2</div>
         <div id="circle3" class="circle" onclick="redirectTo('https://github.com/proje3')">Proje 3</div>
+        <div id="circle4" class="circle" onclick="redirectTo('https://github.com/merkezProje')">Merkez</div>
     </div>
 
     <script>
