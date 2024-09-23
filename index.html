@@ -1,74 +1,30 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proje Yönlendirme Grafiği</title>
+    <title>Interactive Graph</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-        }
-        .container {
-            position: relative;
-            width: 500px;
-            height: 500px;
-            border: 2px solid #ccc;
-            border-radius: 50%;
-        }
-        .orbit {
-            position: absolute;
-            border: 1px solid teal;
-            border-radius: 50%;
-        }
-        .orbit-1 { width: 80%; height: 80%; top: 10%; left: 10%; }
-        .orbit-2 { width: 60%; height: 60%; top: 20%; left: 20%; }
-        .orbit-3 { width: 40%; height: 40%; top: 30%; left: 30%; }
-        .orbit-4 { width: 20%; height: 20%; top: 40%; left: 40%; }
-
         .circle {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: teal;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
+            fill: teal;
+            stroke: gray;
+            stroke-width: 2;
             cursor: pointer;
         }
-        /* Dairelerin yörüngelere göre konumu */
-        #circle1 { top: 5%; left: 50%; transform: translate(-50%, -50%); }
-        #circle2 { top: 35%; left: 80%; transform: translate(-50%, -50%); }
-        #circle3 { top: 70%; left: 20%; transform: translate(-50%, -50%); }
-        #circle4 { top: 50%; left: 50%; transform: translate(-50%, -50%); } /* merkezde */
+        .circle:hover {
+            fill: gray;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Yörüngeleri temsil eden daireler -->
-        <div class="orbit orbit-1"></div>
-        <div class="orbit orbit-2"></div>
-        <div class="orbit orbit-3"></div>
-        <div class="orbit orbit-4"></div>
-
-        <!-- Projeler için tıklanabilir daireler -->
-        <div id="circle1" class="circle" onclick="redirectTo('https://github.com/ft_printf')">ft_printf</div>
-        <div id="circle2" class="circle" onclick="redirectTo('https://github.com/proje2')">Proje 2</div>
-        <div id="circle3" class="circle" onclick="redirectTo('https://github.com/proje3')">Proje 3</div>
-        <div id="circle4" class="circle" onclick="redirectTo('https://github.com/merkezProje')">Merkez</div>
-    </div>
-
-    <script>
-        function redirectTo(url) {
-            window.location.href = url;
-        }
-    </script>
+    <svg viewBox="0 0 500 500" width="500" height="500">
+        <!-- Çemberler ve noktalar -->
+        <circle cx="250" cy="250" r="200" stroke="gray" fill="none" />
+        <!-- Eklenebilir küçük daireler -->
+        <circle class="circle" cx="150" cy="150" r="10" onclick="window.location.href='https://example.com/link1';" />
+        <circle class="circle" cx="300" cy="100" r="10" onclick="window.location.href='https://example.com/link2';" />
+        <circle class="circle" cx="400" cy="300" r="10" onclick="window.location.href='https://example.com/link3';" />
+        <!-- Diğer noktalar benzer şekilde -->
+    </svg>
 </body>
 </html>
