@@ -1,71 +1,32 @@
 # Proje Yönlendirme Grafiği
 
-Bu proje, grafik üzerinde yer alan dairelere tıklayarak farklı projelere yönlendirmenizi sağlar. Dairelerin her biri belirli bir projeye bağlanmıştır ve o projeye tıklanarak erişim sağlanabilir.
+Bu repo, projelerime grafiksel bir arayüz ile kolay erişim sağlamak için hazırlanmıştır. Grafik üzerinde yer alan dairelere tıklayarak ilgili projelere yönlendirileceksiniz.
 
-## Grafik Görüntüsü
+## Proje Görünümü
 
 ![Curriculum Grafik](./grafik.png)
 
 ## Kullanım
 
-Her bir daireye tıklayarak ilgili projeye yönlenebilirsiniz.
+Bu projeyi yerel olarak çalıştırmak için:
+1. Bu repo'yu bilgisayarınıza klonlayın.
+    ```bash
+    git clone https://github.com/kullaniciadi/proje-ismi.git
+    ```
+2. Proje dizininde bulunan `index.html` dosyasını tarayıcınızda açın.
 
-### HTML Kodu:
+Dairelere tıklayarak ilgili projelere yönlendirileceksiniz:
+- **ft_printf Projesi**: [ft_printf](https://github.com/ft_printf)
+- **Proje 2**: [Proje 2](https://github.com/proje2)
+- **Proje 3**: [Proje 3](https://github.com/proje3)
 
-Aşağıdaki HTML kodunu kullanarak interaktif bir grafik oluşturduk:
+## GitHub Pages ile Çalıştırma
 
-```html
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proje Yönlendirme</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .container {
-            position: relative;
-            width: 800px;
-            height: 800px;
-            background-image: url('grafik.png'); /* Grafik dosyanızı buraya ekleyin */
-            background-size: cover;
-        }
-        .circle {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: rgba(0, 128, 128, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            cursor: pointer;
-        }
-        /* Dairelerin yerleşimi */
-        #circle1 { top: 50px; left: 300px; }
-        #circle2 { top: 200px; left: 400px; }
-        #circle3 { top: 400px; left: 100px; }
-        /* Yeni daireleri bu şekilde ekleyebilirsiniz */
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div id="circle1" class="circle" onclick="redirectTo('https://github.com/ft_printf')">ft_printf</div>
-        <div id="circle2" class="circle" onclick="redirectTo('https://github.com/proje2')">Proje 2</div>
-        <div id="circle3" class="circle" onclick="redirectTo('https://github.com/proje3')">Proje 3</div>
-    </div>
+Bu projeyi GitHub Pages üzerinden de görüntüleyebilirsiniz. İlgili interaktif sayfaya gitmek için [buraya tıklayın](https://kullaniciadi.github.io/proje-ismi/).
 
-    <script>
-        function redirectTo(url) {
-            window.location.href = url;
-        }
-    </script>
-</body>
-</html>
+## Projeler Hakkında
+
+Her daire farklı bir projeye yönlendirme yapmaktadır. Dairelerin yerleşimi ve projeler şu şekildedir:
+- ft_printf: Temel C dilinde printf fonksiyonunun yeniden yazılması.
+- Proje 2: [Proje 2 açıklaması]
+- Proje 3: [Proje 3 açıklaması]
