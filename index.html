@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Yönlendirme</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-image: url('grafik.png'); /* Grafik dosyanızı buraya ekleyin */
+            background-size: cover;
+        }
+        .circle {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba(0, 128, 128, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* Dairelerin yerleşimi */
+        #circle1 { top: 50px; left: 300px; }
+        #circle2 { top: 200px; left: 400px; }
+        #circle3 { top: 400px; left: 100px; }
+        /* Yeni daireleri bu şekilde ekleyebilirsiniz */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Dairelerin her birine tıklama ile yönlendirme yapacak div'ler -->
+        <div id="circle1" class="circle" onclick="redirectTo('https://github.com/ft_printf')">ft_printf</div>
+        <div id="circle2" class="circle" onclick="redirectTo('https://github.com/proje2')">Proje 2</div>
+        <div id="circle3" class="circle" onclick="redirectTo('https://github.com/proje3')">Proje 3</div>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
