@@ -1,35 +1,18 @@
-# Grafik ve Bağlantılar
+# Proje Başlığı
 
-Bu proje, etkileşimli bir grafik ve bağlantıları içermektedir. Aşağıda HTML kodu verilmiştir:
+Bu projede grafik şu şekildedir:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Graph</title>
-    <style>
-        .circle {
-            fill: teal;
-            stroke: gray;
-            stroke-width: 2;
-            cursor: pointer;
-        }
-        .circle:hover {
-            fill: gray;
-        }
-    </style>
-</head>
-<body>
-    <svg viewBox="0 0 500 500" width="500" height="500">
-        <!-- Çemberler ve noktalar -->
-        <circle cx="250" cy="250" r="200" stroke="gray" fill="none" />
-        <!-- Eklenebilir küçük daireler -->
-        <circle class="circle" cx="150" cy="150" r="10" onclick="window.location.href='https://example.com/link1';" />
-        <circle class="circle" cx="300" cy="100" r="10" onclick="window.location.href='https://example.com/link2';" />
-        <circle class="circle" cx="400" cy="300" r="10" onclick="window.location.href='https://example.com/link3';" />
-        <!-- Diğer noktalar benzer şekilde -->
-    </svg>
-</body>
-</html>
+<svg width="300" height="300">
+  <!-- Dış çember -->
+  <circle cx="150" cy="150" r="140" stroke="gray" stroke-width="2" fill="none" />
+  
+  <!-- İç çemberler ve noktalar -->
+  <circle cx="150" cy="150" r="40" stroke="lightblue" stroke-width="2" fill="none" />
+  <circle cx="150" cy="150" r="80" stroke="lightblue" stroke-width="2" fill="none" />
+  <circle cx="150" cy="150" r="120" stroke="lightblue" stroke-width="2" fill="none" />
+
+  <!-- Noktalar -->
+  <circle cx="150" cy="100" r="5" fill="turquoise" />
+  <circle cx="110" cy="120" r="5" fill="gray" />
+  <circle cx="180" cy="170" r="7" fill="turquoise" />
+</svg>
