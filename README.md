@@ -12,8 +12,8 @@
 | Circle 0 & 1                      | Durum                                     |
 | :-                                | :-                                        |
 | [Libft][libft_tree]               | [![libft_badge]][libft_tree]              |
-| [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
 | [ft_printf][printf_tree]          | [![printf_badge]][printf_tree]            |
+| [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
 | [Born2beroot][born2beroot_tree]   | [![born2beroot_badge]][born2beroot_tree]  |
 
 
